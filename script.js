@@ -1,39 +1,10 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.main-nav');
-
-menuToggle?.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  menuToggle.setAttribute('aria-expanded', String(open));
-});
-
-document.querySelectorAll('.main-nav a').forEach((link) => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuToggle?.setAttribute('aria-expanded', 'false');
-  });
-});
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) entry.target.classList.add('visible');
-  });
-}, { threshold: 0.13 });
-
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-
-document.getElementById('year').textContent = new Date().getFullYear();
-
-const form = document.getElementById('quoteForm');
-form?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const data = new FormData(form);
-  const subject = encodeURIComponent('Free CAMTEC Security Quote Request');
-  const body = encodeURIComponent(
-    `Name: ${data.get('name')}\n` +
-    `Phone: ${data.get('phone')}\n` +
-    `Email: ${data.get('email')}\n` +
-    `Property type: ${data.get('property')}\n\n` +
-    `Project details:\n${data.get('message') || 'Not provided'}`
-  );
-  window.location.href = `mailto:info@camtecusa.com?subject=${subject}&body=${body}`;
+const toggle=document.querySelector(".menu"),nav=document.querySelector(".nav");
+toggle?.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open))});
+document.querySelectorAll(".nav nav a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+document.getElementById("quoteForm")?.addEventListener("submit",e=>{
+  e.preventDefault();
+  const d=new FormData(e.currentTarget);
+  const subject=encodeURIComponent(`CAMTEC inquiry: ${d.get("set")}`);
+  const body=encodeURIComponent(`Name: ${d.get("name")}\nPhone: ${d.get("phone")}\nEmail: ${d.get("email")}\nCamera set: ${d.get("set")}\n\nMessage:\n${d.get("message")||""}`);
+  window.location.href=`mailto:Camtec.usa@gmail.com?subject=${subject}&body=${body}`;
 });

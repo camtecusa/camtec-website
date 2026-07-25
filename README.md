@@ -1,20 +1,17 @@
-# CAMTEC Website
+# CAMTEC Camera Set Catalog
 
-Professional static website for CAMTEC Security.
+Website files ready for GitHub and Cloudflare Pages.
 
-## Files
-- `index.html` — website content
-- `styles.css` — design and mobile layout
-- `script.js` — menu, animations, and quote form
-- `assets/camtec-logo.svg` — temporary CAMTEC logo
+## Upload
+Upload the following items to the root of your GitHub repository:
 
-## Publish with GitHub + Cloudflare Pages
-1. Replace the files in your GitHub repository with these files.
-2. Commit the changes to the `main` branch.
-3. Cloudflare Pages will deploy automatically.
-4. Wait 1–3 minutes and refresh `https://camtecusa.com`.
+- index.html
+- styles.css
+- script.js
+- assets/
 
-## Before launch
-- Replace the temporary SVG logo with your original logo if desired.
-- Confirm `info@camtecusa.com` exists. If not, change it in `index.html` and `script.js`.
-- Add real installation photos later.
+Commit the changes. Cloudflare Pages will publish the new version automatically.
+
+## Contact information
+- Phone: (631) 786-0577
+- Email: Camtec.usa@gmail.com
