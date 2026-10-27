@@ -3,120 +3,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Download Center | CAMTEC USA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061126">
   <meta name="description" content="Download CAMTEC security camera apps, software, and user manuals.">
-
+  <title>Download Center | CAMTEC USA</title>
   <link rel="stylesheet" href="/downloads.css">
 </head>
 <body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
 
-  <header class="site-header">
-    <nav class="navbar">
-      <a href="/" class="brand" aria-label="CAMTEC USA Home">
-        <img src="/assets/camtec-logo.png"
-             alt="CAMTEC USA"
-             style="height: 50px; width: auto; object-fit: contain;">
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="/" aria-label="CAMTEC USA Home">
+        <img src="/assets/camtec-logo.png" alt="CAMTEC USA">
       </a>
-
-      <div class="nav-links">
+      <nav aria-label="Main navigation">
         <a href="/">Home</a>
-        <a href="/downloads.html">Downloads</a>
-        <a href="mailto:support@camtecusa.com">Support</a>
-      </div>
-    </nav>
+        <a class="active" href="/downloads.html" aria-current="page">Downloads</a>
+        <a href="#support">Support</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <p class="eyebrow">CAMTEC • SOFTWARE & APPS</p>
-      <h1>Download Center</h1>
-      <p>
-        Find apps, software, and documentation
-        to manage your CAMTEC security system
-        from your phone or computer.
-      </p>
-      <a href="#downloads" class="btn">
-        View Downloads ↓
-      </a>
-    </section>
-
-    <section id="downloads" class="downloads-section">
-      <h2>Apps & Software</h2>
-      <p>
-        Download links will be available once
-        the applications have been released and verified.
-      </p>
-
-      <div class="downloads-grid">
-
-        <article class="download-card">
-          <h3>Android App</h3>
-          <p>
-            Monitor live cameras and recordings
-            from compatible Android devices.
-          </p>
-          <span class="status">Coming Soon</span>
-        </article>
-
-        <article class="download-card">
-          <h3>iPhone & iPad App</h3>
-          <p>
-            Access your CAMTEC security system
-            from compatible iOS devices.
-          </p>
-          <span class="status">Coming Soon</span>
-        </article>
-
-        <article class="download-card">
-          <h3>Windows Software</h3>
-          <p>
-            Manage your compatible CAMTEC
-            security cameras from a Windows PC.
-          </p>
-          <span class="status">Coming Soon</span>
-        </article>
-
-        <article class="download-card">
-          <h3>macOS Software</h3>
-          <p>
-            View and manage compatible security
-            cameras from your Mac.
-          </p>
-          <span class="status">Coming Soon</span>
-        </article>
-
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <span class="eyebrow">
+          <span class="pulse"></span>
+          CAMTEC SOFTWARE HUB
+        </span>
+        <h1>Your Security.<br><span>Connected.</span></h1>
+        <p>
+          Discover apps, desktop software, and helpful
+          resources for your CAMTEC security system.
+          Everything you need in one place.
+        </p>
+        <a class="button primary" href="#downloads">
+          Explore Downloads <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit-core">C</div>
       </div>
     </section>
 
-    <section class="manuals-section">
-      <h2>User Manuals</h2>
-      <p>
-        Download documentation and setup guides
-        for CAMTEC security systems.
-      </p>
+    <section class="section" id="downloads">
+      <div class="section-top">
+        <div>
+          <span class="section-label">CAMTEC ECOSYSTEM</span>
+          <h2>Apps & Software</h2>
+          <p>Access your security system from your favorite devices.</p>
+        </div>
+        <span class="section-chip">4 Platforms</span>
+      </div>
 
-      <article class="download-card">
-        <h3>NVR PoE User Manual</h3>
-        <p>
-          Installation, configuration, and operation
-          guide for compatible NVR PoE systems.
-        </p>
-        <a class="btn"
-           href="/assets/manual-nvr-poe-camtec.pdf"
-           target="_blank"
-           rel="noopener">
-          View / Download PDF
-        </a>
+      <div class="app-grid">
+        <article class="app-card">
+          <div class="card-icon">A</div>
+          <span class="card-type">MOBILE APPLICATION</span>
+          <h3>Android</h3>
+          <p>View compatible cameras and recordings from your Android device.</p>
+          <span class="coming">Coming Soon</span>
+        </article>
+
+        <article class="app-card">
+          <div class="card-icon">iOS</div>
+          <span class="card-type">MOBILE APPLICATION</span>
+          <h3>iPhone & iPad</h3>
+          <p>Stay connected to your compatible security system on iOS.</p>
+          <span class="coming">Coming Soon</span>
+        </article>
+
+        <article class="app-card">
+          <div class="card-icon">W</div>
+          <span class="card-type">DESKTOP SOFTWARE</span>
+          <h3>Windows</h3>
+          <p>Manage compatible security cameras from your Windows PC.</p>
+          <span class="coming">Coming Soon</span>
+        </article>
+
+        <article class="app-card">
+          <div class="card-icon">Mac</div>
+          <span class="card-type">DESKTOP SOFTWARE</span>
+          <h3>macOS</h3>
+          <p>Access compatible security devices from your Mac computer.</p>
+          <span class="coming">Coming Soon</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section resources">
+      <div class="section-top">
+        <div>
+          <span class="section-label">DOCUMENTATION</span>
+          <h2>Resources & Manuals</h2>
+          <p>Get the guidance you need to set up your system.</p>
+        </div>
+      </div>
+
+      <article class="manual-card">
+        <div class="manual-icon">PDF</div>
+        <div class="manual-content">
+          <span class="card-type">USER DOCUMENTATION</span>
+          <h3>NVR PoE User Manual</h3>
+          <p>Installation, configuration, and operation guide for compatible NVR PoE systems.</p>
+        </div>
+        <div class="manual-actions">
+          <a class="button primary"
+             href="/assets/manual-nvr-poe-camtec.pdf"
+             target="_blank"
+             rel="noopener noreferrer">View Manual ↗</a>
+          <a class="button outline"
+             href="/assets/manual-nvr-poe-camtec.pdf"
+             download="CAMTEC-NVR-PoE-Manual.pdf">Download PDF ↓</a>
+        </div>
       </article>
+    </section>
+
+    <section class="section" id="support">
+      <div class="support-card">
+        <div>
+          <span class="section-label">WE'RE HERE TO HELP</span>
+          <h2>Need assistance?</h2>
+          <p>Questions about setup, software, or your security system? Our team is here to help.</p>
+        </div>
+        <a class="button primary" href="/#contact">Contact Support ↗</a>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2026 CAMTEC USA. All rights reserved.</p>
-    <a href="/">Back to Home</a>
+  <footer>
+    <span>© 2026 CAMTEC USA. All rights reserved.</span>
+    <a href="/">Back to Home ↑</a>
   </footer>
-
-  <script src="/downloads.js"></script>
 </body>
 </html>
