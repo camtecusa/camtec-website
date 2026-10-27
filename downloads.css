@@ -1,69 +1,16 @@
 
-/* CAMTEC - Cuatro plataformas de descarga */
-
-.downloads-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 20px;
-  align-items: stretch;
-}
-
-.download-card {
-  min-width: 0;
-  padding: 28px;
-  border-radius: 18px;
-  background: linear-gradient(145deg, #123c85, #0865c9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #fff;
-  transition: transform 0.3s ease;
-}
-
-.download-card:hover {
-  transform: translateY(-5px);
-}
-
-.download-card .platform-icon {
-  font-size: 32px;
-  color: #36d5ff;
-  margin-bottom: 18px;
-}
-
-.download-card .tag {
-  display: block;
-  font-size: 11px;
-  letter-spacing: 2px;
-  color: #7ce9ff;
-  margin-bottom: 12px;
-}
-
-.download-card h3 {
-  font-size: 19px;
-  margin: 0 0 14px;
-}
-
-.download-card p {
-  line-height: 1.7;
-  color: #d9e9ff;
-}
-
-.coming-soon {
+.manual-btn {
   display: inline-block;
   margin-top: 18px;
-  padding: 11px 18px;
+  padding: 12px 20px;
   border-radius: 9px;
-  background: rgba(255, 255, 255, 0.12);
-  color: #dcecff;
-  font-weight: 600;
+  background: #00aeef;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
-@media (max-width: 1000px) {
-  .downloads-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 600px) {
-  .downloads-grid {
-    grid-template-columns: 1fr;
-  }
+.manual-btn:hover {
+  background: #008fd1;
 }
