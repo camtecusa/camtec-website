@@ -57,9 +57,9 @@ a:focus-visible {
 }
 .logo img {
   display: block;
-  height: 70px;
-  max-width: 260px;
-  width: auto;
+  height: auto;
+  max-width: 100%;
+  width: 360px;
   object-fit: contain;
 }
 .header nav { display: flex; gap: 30px; flex-wrap: wrap; }
