@@ -536,3 +536,22 @@ footer a {
   object-position: center;
   display: block;
 }
+
+/* CAMTEC - Remove extra icon backgrounds */
+
+.app-card .app-icon,
+.app-card .card-icon {
+  background: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.app-card .app-icon img,
+.app-card .card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
